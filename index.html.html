@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus top Animes</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url("https://images7.alphacoders.com/135/thumb-1920-1350954.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h2 {
+            margin: 0 0 5px;
+        }
+
+        .card p {
+            margin: 0;
+            color: #cbd5f5;
+        }
+
+        .card a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .card a:hover img {
+            transform: scale(1.05);
+        }
+
+        .card a::after {
+            content: "Clique para acessar";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .card a:hover::after {
+            opacity: 1;
+        }
+
+        .sobre {
+            background: #020617;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .sobre img {
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎌 Meus 10 Animes Favoritos</h1>
+    <p>Por Seba</p>
+</header>
+
+<main class="container">
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 1</h2>
+            <p>One Piece</p>
+        </div>
+        <a href="https://onepiece.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/ad/1b/10/ad1b1056ddde9e64734f4b25f6f82080.jpg" alt="One Piece Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 2</h2>
+            <p>Bleach</p>
+        </div>
+        <a href="https://bleach.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/b8/14/db/b814db9e66feab04ee09e45bbd75211f.jpg" alt="Bleach Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 3</h2>
+            <p>Naruto</p>
+        </div>
+        <a href="https://naruto.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/21/15/ef/2115ef585be9a63820dcf78b84319365.jpg" alt="Naruto Uzumaki Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 4</h2>
+            <p>Jojo</p>
+        </div>
+        <a href="https://jojo.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/34/bf/57/34bf578b8c6b2836d30c8b8482c4d570.jpg" alt="JoJo's Bizarre Adventure Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 5</h2>
+            <p>Fullmetal</p>
+        </div>
+        <a href="https://fma.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/22/f2/9a/22f29af0951e608d34ed389a684e2e26.jpg" alt="Fullmetal Alchemist Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 6</h2>
+            <p>Chainsaw Man</p>
+        </div>
+        <a href="https://chainsaw-man.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/736x/cb/ed/08/cbed08e076bc504fb5cbf1493e52215f.jpg" alt="Chainsaw Man Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 7</h2>
+            <p>Shingeki</p>
+        </div>
+        <a href="https://attackontitan.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/aa/5b/a8/aa5ba8ad4f5a49a7f5adc4cf679e6145.jpg" alt="Attack on Titan Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 8</h2>
+            <p>Black Clover</p>
+        </div>
+        <a href="https://blackclover.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/b4/29/8b/b4298ba90b4cf192d62c93ff3310820f.jpg" alt="Black Clover Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 9</h2>
+            <p>Demon Slayer</p>
+        </div>
+        <a href="https://kimetsu-no-yaiba.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/736x/e0/7d/87/e07d87a8de4bb8661d15671038fe4842.jpg" alt="Demon Slayer Banner">
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Anime 10</h2>
+            <p>Jujutsu Kaisen</p>
+        </div>
+        <a href="https://jujutsu-kaisen.fandom.com" target="_blank">
+            <img src="https://i.pinimg.com/1200x/25/b3/eb/25b3eb398e5133961dd6a120d979b53f.jpg" alt=" Jujutsu Kaisen Banner">
+        </a>
+    </div>
+
+</main>
+
+<section class="sobre">
+    <h2>👤 Sobre mim</h2>
+    <img src="https://pbs.twimg.com/profile_images/2038600342493970432/G1W4-osW_400x400.jpg" width="120" alt="Seba Icon">
+    <p><strong>Nome:</strong> Mateus Sebastião</p>
+    <p><strong>Apelido:</strong> Seba</p>
+    <p><strong>Idade:</strong> 19/10/2008 <br> 17 anos</p>
+    <p><strong>Sobre:</strong> Apenas um jovem estudante de Coité do Noia-AL aproveitando a vida.</p>
+</section>
+
+<footer>
+    <p>© 2026 - Meu site de animes</p>
+</footer>
+
+</body>
+</html>
